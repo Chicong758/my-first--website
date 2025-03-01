@@ -1,0 +1,71 @@
+<html>
+<head> 
+<title> MSSV - HỌ TÊN</TITLE>
+<script>
+function tinhtong(x1,x2)
+{
+return x1+ x2;
+
+
+}
+function tinhhieu(x3,x4)
+{
+return (x3)- (x4);
+}
+
+function tinhnhan(x1,x2)
+{
+return parseInt(x1)* parseInt (x2);
+
+
+}
+function tinhtongdayso(x1,x2)
+{
+var tong;
+tong=0;
+for(let i= parseInt(x1);i<= parseInt(x2); i++)
+tong=tong+i;
+localStorage.x=tong;
+return tong;
+}
+function thongbao()
+{
+for(let i=1;i<= 1000; i++)
+alert(localStorage.x)
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+<FORM> 
+<label> SỐ THỨ 1 : </label>
+<INPUT type =" text " id= "sốthứ1" name = "sốthứ1">
+<br><br>
+<label> SỐ THỨ 2 : </label>
+<INPUT type =" text " id= "sốthứ2" name = "sốthứ2">
+<br><br>
+<label> SỐ THỨ 3 : </label>
+<INPUT type =" text " id= "sốthứ3" name = "sốthứ3">
+<br><br>
+<input type = "button" onclick ="sốthứ3.value = tinhtong(sốthứ1.value, sốthứ2.value)"value ="tinhtong" >
+<input type = "button" onclick ="sốthứ3.value = tinhhieu(sốthứ1.value,sốthứ2.value)"value ="tinhhieu" >
+<input type = "button" onclick ="sốthứ3.value = tinhnhan(sốthứ1.value,sốthứ2.value)"value ="tinhnhan" >
+<input type = "button" onclick ="sốthứ3.value = tinhtongdayso(sốthứ1.value,sốthứ2.value)"value ="tinhtongdayso" >
+<input type = "button" onclick =thongbao() value = "thongbao" >
+
+
+
+</FORM>
+
+
+
+
+</body>
+
+
+
+ </html>
